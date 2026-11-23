@@ -5,7 +5,7 @@ Would you like to **add a dedicated section for open-source LLM prompt/output sa
 </FollowUp>
 # Awesome-Code-Quality-Guardrails-Safety-Linting
 
-# Top Code Quality Guardrails & Safety Linting Ecosystem
+## Top Code Quality Guardrails & Safety Linting Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Static Analysis, Security Linting & Self-Hosted Quality Gates*  
