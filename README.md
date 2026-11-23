@@ -20,36 +20,28 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
 
 ## Table of Contents
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-products)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
+
+The static code analysis and application security testing (AST) sector is estimated at approximately **$2.0 billion to $2.2 billion (2025/2026)** and projected to exceed **$4.2 billion by 2030** (expanding at ~17–18% CAGR), propelled by rapid enterprise DevSecOps adoption and the explosion of AI-generated code. The market is **moderately concentrated (semi-consolidated)** at the top—with leading enterprise platforms (Snyk, SonarSource, Veracode, Black Duck/Coverity, and Checkmarx) capturing over 50% of total revenue—while remaining competitive and fragmented across lower-tier specialized linters and developer-first startups.
+
 ## SaaS/Hosted Platforms
 
-- **[SonarQube](https://www.sonarsource.com/)**  
-  **The enterprise standard for code quality and security analysis.** **Free tier for private projects up to 50k LOC**; **Team plan from $34/month** (up to 100k LOC); **Enterprise custom-priced** with unlimited LOC [citation:11]. **Free forever for OSS maintainers** (public, OSI-licensed repos get Pro-plan features) . Includes **SonarQube MCP Server** (open source) for AI agent integration, and **SonarQube for IDE** (free extension) for real-time analysis . Best for teams wanting a proven, comprehensive quality gate with a genuine free tier for small private projects.
-
-- **[Snyk](https://snyk.io/)**  
-  **Developer-first security with a genuine free tier.** **Free: $0/month** with SCA, SAST (Snyk Code), IaC, and Container access—limits are **200 Open Source tests, 100 Code tests, 300 IaC tests, 100 Container tests** [citation:2][citation:12]. **Team: $25/month** for increased limits. Best for development teams wanting security integrated into IDEs and CI without upfront cost.
-
-- **[DeepSource](https://deepsource.com/)**  
-  **Static analysis with a free Open Source plan.** **Open Source: $0** for public repos with unlimited members and **1,000 PR reviews/month**; AI Review and Autofix available pay-as-you-go [citation:3]. **Team: $30/month per contributor** (full features, bundled AI credits); **Enterprise custom** with self-hosted deployment and SSO [citation:13]. **14-day free trial** of Team features available [citation:13]. Best for open-source projects and small teams wanting a modern static analysis platform.
-
-- **[Codacy](https://www.codacy.com/)**  
-  **Static analysis with a free forever tier for individuals and OSS.** **Developer: $0 forever** (IDE-only, unlimited offline SAST/secrets/dependency scanning, auto-fix, MCP integration) [citation:14]. **Team: $18/dev/month annual** ($21 monthly) for up to 30 developers, 100 private repos, full cloud platform with 54 tools and 12,000+ rules [citation:14]. **Business custom** for enterprises needing DAST, container scanning, SSO, audit logs, and SBOM [citation:14]. Best for teams wanting a generous free tier and a clear upgrade path.
-
-- **[Code Climate](https://codeclimate.com/)**  
-  **Quality and velocity analytics.** **Free tier available**; **Pro: $20/contributor/month; Enterprise: $30/contributor/month** (per CostBench) [citation:15]. **Vendr data**: small teams (5–15 committers) budget **$4,000–$10,000/year** for Quality alone; mid-size (20–50) **$12,000–$35,000**; larger (75+) **$30,000–$80,000+** [citation:5]. **Renewal uplifts of 5–15% are typical**—negotiate 60–90 days early for flat or minimal increases [citation:5]. Best for teams wanting quality metrics alongside static analysis.
-
-- **[Coverity](https://www.synopsys.com/)**  
-  **Enterprise static analysis with a long pedigree.** **Pricing available upon request**; Software Advice lists starting at **$720/year** (per comparison data) [citation:9]. Positioned for large organizations with complex, safety-critical codebases.
-
-- **[Veracode](https://www.veracode.com/)**  
-  **Enterprise application security.** **No free tier** as of September 2026; **14–30 day free trial** typically available with most features [citation:7]. **8 pricing tiers** (Risk Manager, Fix, SAST, DAST, SCA, etc.) with custom pricing [citation:7]. Best for enterprises needing comprehensive AppSec with SLA-backed support.
-
-- **[Checkmarx](https://checkmarx.com/)**  
-  **Enterprise SAST and SCA.** **Checkmarx One** is priced by quote with **no published price list**; SAST is core, with Secrets, IaC, API Security, SCA, Container Scanning, and DAST as add-on modules [citation:8]. **Legacy self-hosted products** available for on-premises deployment [citation:8]. Best for large organizations needing modular AppSec coverage.
+| Platform | Estimated Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier / Free Trial Limits | Description |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Snyk](https://snyk.io/)** | **~$7.4B–$8.5B Valuation** (~$326M ARR) | **Team plan:** $25/month per contributing developer | **Free plan forever:** 200 Open Source (SCA) tests/mo, 100 Code (SAST) tests/mo, 300 IaC tests/mo, 100 Container tests/mo | Developer-first security scanning across code, open source dependencies, containers, and IaC configs directly in CI/CD and IDEs. |
+| **[SonarQube](https://www.sonarsource.com/)** | **~$4.7B Valuation** (~$100M+ ARR) | **Team plan:** $34/month (up to 100,000 LOC) | **Free plan forever:** Up to 50,000 LOC for private projects; free without LOC limits for public open-source repos | The industry benchmark for code quality, security hot spots, and technical debt tracking across 30+ languages. |
+| **[Veracode](https://www.veracode.com/)** | **~$2.5B Valuation** (~$150M–$250M ARR) | **Standard annual contract:** ~$15,000/year base (starts ~$750–$1,000/contributor/yr) | **Free trial:** 14–30 day trial with full access to SAST, SCA, and pipeline flaw analysis; no permanent free plan | Enterprise AppSec platform providing comprehensive static analysis, dynamic testing, and software composition analysis with compliance reporting. |
+| **[Coverity](https://www.synopsys.com/)** | **~$2.1B Valuation** (Black Duck carve-out, ~$100M+ ARR) | **Commercial license:** Starts at ~$720/year per user (custom enterprise contracts typically starting at $15k–$25k/yr) | **Free trial:** 14–30 day sales-provisioned evaluation trial (unlimited free analysis for qualifying open-source repos via Coverity Scan) | Deep enterprise static analysis and safety-critical defect detection for C, C++, Java, C#, and other core enterprise stacks. |
+| **[Checkmarx](https://checkmarx.com/)** | **~$1.15B Valuation** (~$200M+ ARR) | **Checkmarx One:** Starts at ~$30,000/year minimum platform commitment (~$1,000/developer/year for SAST) | **Free trial:** 14-day evaluation POC agreement upon sales approval (or 30-day trial for Developer Assist); no permanent free plan | Enterprise AST and ASPM suite covering static application security testing, API security, and supply chain risk management. |
+| **[Code Climate](https://codeclimate.com/)** | **~$65M Raised** (~$10M–$15M ARR) | **Pro plan:** $20/contributor/month | **Free plan forever:** Unlimited analysis for public open-source repositories; 14-day free trial for private repos | Automated code review and maintainability analytics calculating test coverage, code smells, and churn metrics. |
+| **[Codacy](https://www.codacy.com/)** | **~$15M Raised** (~$15M–$18M ARR) | **Team plan:** $18/contributor/month (annual billing) or $21/month (monthly) | **Developer plan forever:** $0 (IDE-only offline scanning, unlimited auto-fix, SAST & secret linting); free cloud tier for OSS | Automated code review platform supporting 50+ linters and 12,000+ rules with security and code standard enforcement. |
+| **[DeepSource](https://deepsource.com/)** | **~$3M Raised** (Seed/YC, ~$2M–$5M ARR) | **Team plan:** $30/contributor/month (annual billing) | **Open Source plan forever:** $0 for public repos (unlimited members, 1,000 PR reviews/month); 14-day free trial on Team tier | Modern developer-focused static code analysis, auto-formatting, and vulnerability scanning with automated PR autofixing. |
 
 ## Open-Source GitHub Projects
 
