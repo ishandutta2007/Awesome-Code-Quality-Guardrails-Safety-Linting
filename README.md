@@ -60,7 +60,7 @@ The static code analysis and application security testing (AST) sector is estima
 
 ## 💻 Top Open-Source GitHub Projects
 
-Curated list of production-ready, open-source static analyzers, linters, and safety policy engines sorted by GitHub stars.
+Curated list of production-ready, open-source static analyzers, linters, and safety policy engines sorted by GitHub_Stars.
 
 ### ⚡ Linters, Formatters & SAST Analyzers
 
